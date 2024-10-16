@@ -28,6 +28,15 @@ Após a instalação das dependências, você pode iniciar o servidor de desenvo
 npm run dev
 ```
 
+
+### Abrir o projeto
+
+Após iniciar o projeto, você pode abrir pela URL:
+
+```bash
+http://localhost:3124/apps/670d5009d9fb63fc0c257dff
+```
+
 O projeto estará disponível no endereço: [http://localhost:3000](http://localhost:3000).
 
 ## Tecnologias Utilizadas
