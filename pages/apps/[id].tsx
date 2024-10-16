@@ -47,7 +47,7 @@ const Scrumboard = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`http://localhost:3005/users/${id}/boards`);
+            const response = await axios.get(`http://localhost:3123/users/${id}/boards`);
             setProjectListNew(response.data[0].columns);
             setBoardId(response.data[0].id);
         } catch (error) {
@@ -219,7 +219,7 @@ const Scrumboard = () => {
 
     const moveTask = async (taskId: string | number, newGroupId: string | number) => {
         try {
-            const response = await axios.put(`http://localhost:3005/tasks/${taskId}/move`, { newColumnId: newGroupId });
+            const response = await axios.put(`http://localhost:3123/tasks/${taskId}/move`, { newColumnId: newGroupId });
 
             if (!response.data) {
                 throw new Error('Erro ao mover a tarefa');
